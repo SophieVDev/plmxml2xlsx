@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Convertisseur XML vers XLSX</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+        
+        .container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+            margin: 15px;
+        }
+        
+        h2 {
+            color: #007bff;
+            text-align: center;
+            margin-bottom: 40px; /* Augmentez la valeur ici pour plus d'espace */
+            font-size: 24px;
+            margin-right: 50px;
+        }
+        
+        form {
+            margin-top: 40px; /* Augmentez la valeur ici pour plus d'espace */
+            display: flex;
+            flex-direction: column;
+        }
+        
+        input[type=file] {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 2px solid #007bff;
+            border-radius: 5px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+        
+        input[type=file]:focus {
+            border-color: #0056b3;
+        }
+        
+        input[type=submit] {
+            padding: 15px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        
+        input[type=submit]:hover {
+            background-color: #0056b3;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+        }
+        
+    </style> 
+</head>
+<body>
+    <h2>Convertisseur PLMXML vers XLSX</h2>
+    <form method=post enctype=multipart/form-data>
+        <input type=file name=file>
+        <input type=submit value=Envoyer>
+    </form>
+
+       
+</body>
+</html>
